@@ -9,11 +9,7 @@ CorrectedValue(t)=rawvalue(t)+AmountDriftTs+
 
 - t=time of logger data point
 - ts=time at start of correction
-
-Amount Drifte= Amount of Drift at end of correction
-
-Amount Drifts= Amount of Drift at start of correction
-
-TimeDrifte= Time at end of correction
-
-TimeDrifts= Time at start of correction
+- Amount Drifte= Amount of Drift at end of correction
+- Amount Drifts= Amount of Drift at start of correction
+- TimeDrifte= Time at end of correction
+- TimeDrifts= Time at start of correction

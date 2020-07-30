@@ -34,8 +34,8 @@ library(writexl)
 #1. Import continuous data and reformat data ####
 #This spreadsheet has all continuous and field visit data.  
 #The continuous hobo valus are compared and corrected to calibrated field meter field visit values.
-setwd("Z:/Monitoring Projects/Conductivity Monitors/Pilot/Data Analysis/QAdataFVandAquarius")
-SpC<-read.csv("SpCQA5-21-18.csv",stringsAsFactors=FALSE, na.string = "") #from ReformatAQData&Export.R, line262 ish
+setwd("Z:/Desktop")
+SpC<-read.csv("SpCQA5-21-18_Github.csv",stringsAsFactors=FALSE, na.string = "") #from ReformatAQData&Export.R, line262 ish
 
 #correct wierd .csv column
 if(names(SpC)[1]=="X")
@@ -435,8 +435,8 @@ SCnew1<- SCnew %>%
   filter(Type=="SCnd") %>% #remove field visits for export
   select(-Type)
 
-#Export new continuous data for each site to import into Aquarius
-setwd("Z:/Monitoring Projects/Conductivity Monitors/Data Analysis/Final Drift Corrected Data")
+#Export new continuous data for each site, will import into Aquarius
+setwd("Z:/Desktop")
 
 #write.csv(SCnew1, file="SCnew1All7-6-18.csv")
 

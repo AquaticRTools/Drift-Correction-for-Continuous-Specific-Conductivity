@@ -7,9 +7,8 @@ Drift Correction:
 CorrectedValue(t)=rawvalue(t)+AmountDriftTs+
    (t-ts)*((AmountDrifte-AmountDrifts)/(TimeDrifte-TimeDrifts))
 
-t=time of logger data point
-
-ts=time at start of correction
+- t=time of logger data point
+- ts=time at start of correction
 
 Amount Drifte= Amount of Drift at end of correction
 
